@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Dante Warhola</title>
+  <meta name="description" content="Security-focused projects by Dante Warhola: Active Directory monitoring lab, Pi-hole DNS sinkhole, encrypted messaging, threat-intelligence tooling, and a Red Team / OSINT knowledge base.">
+  <meta name="author" content="Dante Warhola">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Projects — Dante Warhola">
+  <meta property="og:description" content="Active Directory monitoring lab, Pi-hole DNS sinkhole, encrypted messaging, threat-intelligence tooling, and a Red Team / OSINT knowledge base.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-cover.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">DW<span>//</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a data-nav="home" href="index.html">Home</a></li>
+        <li><a data-nav="about" href="about.html">About</a></li>
+        <li><a data-nav="experience" href="experience.html">Experience</a></li>
+        <li><a data-nav="projects" href="projects.html">Projects</a></li>
+        <li><a data-nav="claude" href="building-with-claude.html">Building with Claude</a></li>
+        <li><a data-nav="resume" href="resume.html">Résumé</a></li>
+        <li><a data-nav="contact" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Projects</p>
+          <h1>Security work &amp; home labs</h1>
+          <p class="lead">Hands-on builds across blue-team monitoring, network security, applied cryptography, and access control. Where a project lives on GitHub, the repo is linked.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card reveal" id="ad-lab">
+            <p class="card-meta">Blue Team · Detection Engineering</p>
+            <h3>Active Directory Security Monitoring Lab</h3>
+            <p>Built a virtualized Windows Server 2019 environment running Active Directory Domain Services, DNS, and file sharing for domain management. Applied Group Policy audit settings to track logon events and privilege use across domain-joined Windows clients &mdash; the foundation for detecting lateral movement and privilege escalation in an enterprise domain.</p>
+            <ul class="tags"><li class="tag">Windows Server 2019</li><li class="tag">Active Directory</li><li class="tag">Group Policy</li><li class="tag">Advanced Audit Policy</li><li class="tag">Event Logs</li><li class="tag">Virtualization</li></ul>
+            <div class="card-links"><span class="muted mono" style="font-size:.8rem">Home lab · Jun 2025</span></div>
+          </article>
+
+          <article class="card reveal" id="pihole">
+            <p class="card-meta">Network Security · DNS</p>
+            <h3>Pi-hole DNS Sinkhole &amp; Network Filtering</h3>
+            <p>Deployed Pi-hole on a Linux-based home network to block ad, tracker, and known-malicious traffic at the DNS layer across every connected device. Used the built-in admin portal to monitor query volume, inspect resolution behavior, and manage blocklists from a local IP portal &mdash; a practical look at DNS as both a control point and a telemetry source.</p>
+            <ul class="tags"><li class="tag">Linux CLI</li><li class="tag">Pi-hole</li><li class="tag">DNS Filtering</li><li class="tag">Network Monitoring</li><li class="tag">Blocklists</li></ul>
+            <div class="card-links"><span class="muted mono" style="font-size:.8rem">Home lab · May 2025</span></div>
+          </article>
+
+          <article class="card reveal" id="shadowmsg">
+            <p class="card-meta">Applied Cryptography · Privacy</p>
+            <h3>ShadowMsg</h3>
+            <p>An encrypted messaging application built for privacy. It operates without accounts or server-side logging, and sessions and messages terminate automatically &mdash; minimizing the data that exists to be compromised in the first place. An exercise in threat-modeling a communication tool and designing for data minimization.</p>
+            <ul class="tags"><li class="tag">TypeScript</li><li class="tag">End-to-End Encryption</li><li class="tag">Ephemeral Sessions</li><li class="tag">Zero-Logging</li><li class="tag">Threat Modeling</li></ul>
+            <div class="card-links">
+              <a href="https://github.com/dantewarhola/ShadowMsg">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="card reveal" id="lockedinjobs">
+            <p class="card-meta">Access Control · Multi-Tenancy</p>
+            <h3>LockedInJobs</h3>
+            <p>A collaborative job-application tracker with strict per-account data isolation. Each user's applications, status history, and aggregate statistics stay scoped to their own account &mdash; a real-world exercise in authentication, authorization, and preventing cross-tenant data leakage.</p>
+            <ul class="tags"><li class="tag">TypeScript</li><li class="tag">Account Isolation</li><li class="tag">AuthN / AuthZ</li><li class="tag">Multi-Tenant Data</li></ul>
+            <div class="card-links">
+              <a href="https://github.com/dantewarhola/LockedInJobs">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="card reveal" id="threat-dashboard">
+            <p class="card-meta">Threat Intelligence · Built with Claude</p>
+            <h3>Threat-Intelligence Dashboard</h3>
+            <p>A Next.js dashboard that aggregates cybersecurity advisory and news feeds &mdash; The Hacker News, Krebs on Security &mdash; into a single monitored view alongside schedule and task data. API keys live in environment variables and are never committed; deployed on Vercel. A lightweight personal threat-intel and OSINT feed.</p>
+            <ul class="tags"><li class="tag">Next.js 14</li><li class="tag">TypeScript</li><li class="tag">RSS / OSINT Feeds</li><li class="tag">Secrets Hygiene</li><li class="tag">Claude Code</li></ul>
+            <div class="card-links"><a href="building-with-claude.html#threat-dashboard">Details &rarr;</a></div>
+          </article>
+
+          <article class="card reveal" id="agent-guardrails">
+            <p class="card-meta">AI Security · Built with Claude</p>
+            <h3>Autonomous Agent with Least-Privilege Guardrails</h3>
+            <p>An unattended AI agent constrained by a hard security boundary: a single authorized account, an explicit allow/deny scope, mandatory verification before any state-changing action, and an immutable run log for every execution. A study in applying least privilege, segregation of duties, and audit trails to autonomous systems.</p>
+            <ul class="tags"><li class="tag">Least Privilege</li><li class="tag">Guardrail Design</li><li class="tag">Audit Logging</li><li class="tag">Segregation of Duties</li><li class="tag">Claude Code</li></ul>
+            <div class="card-links"><a href="building-with-claude.html#agent-guardrails">Details &rarr;</a></div>
+          </article>
+
+          <article class="card reveal" id="osint-kb">
+            <p class="card-meta">Red Team / OSINT Research · Built with Claude</p>
+            <h3>Red Team &amp; OSINT Knowledge Base</h3>
+            <p>A self-built 128-note reference hub covering MITRE ATT&amp;CK, command-and-control infrastructure, Active Directory attack and defense, and OSINT investigation methodology. Every offensive technique is paired with a &ldquo;Detection &amp; Defense&rdquo; section and ATT&amp;CK technique IDs. Scoped strictly for authorized lab and CTF use.</p>
+            <ul class="tags"><li class="tag">MITRE ATT&amp;CK</li><li class="tag">C2 Infrastructure</li><li class="tag">AD Tradecraft</li><li class="tag">OSINT Methodology</li><li class="tag">Blue-Team Mapping</li></ul>
+            <div class="card-links"><a href="building-with-claude.html#osint-kb">Details &rarr;</a></div>
+          </article>
+        </div>
+
+        <div class="section-head reveal" style="margin:3.5rem 0 1.5rem">
+          <p class="kicker">Also built</p>
+          <h2>Other engineering</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <p class="card-meta">Web Tool · JavaScript</p>
+            <h3>Environmental Economics Tool</h3>
+            <p>A browser-based calculator for environmental economics: equilibrium problems, tax calculations, and present-value analysis with automated visualizations. Runs entirely client-side &mdash; no data leaves the browser.</p>
+            <ul class="tags"><li class="tag">JavaScript</li><li class="tag">Client-Side Only</li><li class="tag">Data Visualization</li></ul>
+            <div class="card-links">
+              <a href="https://github.com/dantewarhola/Environ_Economics_Tool">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">&copy; <span data-year>2026</span> Dante Warhola</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/dantewarhola">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/dante-warhola/">LinkedIn</a></li>
+        <li><a href="mailto:dlw110@pitt.edu">dlw110@pitt.edu</a></li>
+        <li><a href="assets/docs/Dante_Warhola_Resume.pdf">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

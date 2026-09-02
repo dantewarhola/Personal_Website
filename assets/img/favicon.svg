@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DW monogram shield">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3dd4a7"/>
+      <stop offset="1" stop-color="#2aa9d1"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0a0e13"/>
+  <path d="M32 7l19 6v14c0 12.6-8 21.9-19 25-11-3.1-19-12.4-19-25V13z"
+        fill="none" stroke="url(#g)" stroke-width="3"/>
+  <text x="32" y="40" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace"
+        font-size="20" font-weight="700" fill="url(#g)">DW</text>
+</svg>
