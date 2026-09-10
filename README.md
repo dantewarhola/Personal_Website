@@ -10,7 +10,7 @@ no dependencies.**
 |---|---|
 | `index.html` | Home — hero, focus areas, featured projects |
 | `about.html` | Bio, education, skills matrix, certifications, leadership |
-| `experience.html` | Work history timeline + recommendation |
+| `experience.html` | Work history timeline + recommendations |
 | `projects.html` | Security-focused projects and home labs |
 | `building-with-claude.html` | Security tooling built with Claude Code |
 | `resume.html` | Web résumé + PDF download + verified credentials |
@@ -27,6 +27,6 @@ Personal_Website/
 │   ├── css/style.css          full design system (dark theme)
 │   ├── js/main.js             mobile nav, active link, scroll reveal
 │   ├── img/                   headshot, favicon, social image
-│   └── docs/                  résumé, Security+ certificate, recommendation letter (PDF)
+│   └── docs/                  résumé, Security+ certificate, recommendation letters (PDF)
 └── README.md
 ```
